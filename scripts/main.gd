@@ -6,4 +6,4 @@ func _ready() -> void:
 
 # Function connected to the StartButton's "pressed" signal
 func _on_start_pressed()-> void:
-	get_tree().change_scene_to_file("res://scenes/encounter_scene.tscn")
+	get_tree().change_scene_to_file("res://scenes/character_selection.tscn")

@@ -1,0 +1,167 @@
+[gd_scene load_steps=7 format=3 uid="uid://55brk54wbvha"]
+
+[ext_resource type="Texture2D" uid="uid://maahrpkxq23" path="res://assets/dice/d4.png" id="2_ay7di"]
+[ext_resource type="Texture2D" uid="uid://dlr1vik3ofrna" path="res://assets/dice/d6.png" id="3_4k0wm"]
+[ext_resource type="Texture2D" uid="uid://c0gnic7lpuj26" path="res://assets/dice/d8.png" id="4_bh1o4"]
+[ext_resource type="Texture2D" uid="uid://d08nh7cdatrny" path="res://assets/dice/d10.png" id="5_eebti"]
+[ext_resource type="Texture2D" uid="uid://bumsucb5sqbaa" path="res://assets/dice/d12.png" id="6_yif32"]
+[ext_resource type="Texture2D" uid="uid://brs7mxfuupkj4" path="res://assets/dice/d20.png" id="7_750qx"]
+
+[node name="CharacterDiceSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 17.0
+offset_right = 992.0
+offset_bottom = 68.0
+text = "Health"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+custom_minimum_size = Vector2(1920, 500)
+layout_mode = 0
+offset_top = 290.0
+offset_right = 1920.0
+offset_bottom = 790.0
+localize_numeral_system = false
+theme_override_constants/separation = 120
+alignment = 1
+
+[node name="AttackDiceContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(900, 500)
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="4" type="TextureButton" parent="Control/HBoxContainer/AttackDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = ExtResource("2_ay7di")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="6" type="TextureButton" parent="Control/HBoxContainer/AttackDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("3_4k0wm")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="8" type="TextureButton" parent="Control/HBoxContainer/AttackDiceContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("4_bh1o4")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="10" type="TextureButton" parent="Control/HBoxContainer/AttackDiceContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("5_eebti")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="12" type="TextureButton" parent="Control/HBoxContainer/AttackDiceContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("6_yif32")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="20" type="TextureButton" parent="Control/HBoxContainer/AttackDiceContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("7_750qx")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="DefenseDiceContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(900, 500)
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 1
+
+[node name="4" type="TextureButton" parent="Control/HBoxContainer/DefenseDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("2_ay7di")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="6" type="TextureButton" parent="Control/HBoxContainer/DefenseDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("3_4k0wm")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="8" type="TextureButton" parent="Control/HBoxContainer/DefenseDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("4_bh1o4")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="10" type="TextureButton" parent="Control/HBoxContainer/DefenseDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("5_eebti")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="12" type="TextureButton" parent="Control/HBoxContainer/DefenseDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("6_yif32")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="20" type="TextureButton" parent="Control/HBoxContainer/DefenseDiceContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("7_750qx")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ConfirmButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 829.0
+offset_top = 991.0
+offset_right = 900.0
+offset_bottom = 1022.0
+text = "Confirm"

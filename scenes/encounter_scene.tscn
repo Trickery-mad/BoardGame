@@ -1,0 +1,300 @@
+[gd_scene load_steps=14 format=3 uid="uid://bgas8mjtmbkyh"]
+
+[ext_resource type="Texture2D" uid="uid://b0cjyfurbyp6" path="res://844946240_preview_3288949bd5d35b3bcfa9de0b65faade54bbd701c.jpg" id="1_oovti"]
+[ext_resource type="Texture2D" uid="uid://btnpekwlxi3oi" path="res://vecteezy_an-8-bit-retro-styled-pixel-art-illustration-of-a-goblin_19017599.png" id="2_c81be"]
+[ext_resource type="Texture2D" uid="uid://ci32uob7ux8ml" path="res://attack_dice.jpg" id="3_fwhqr"]
+[ext_resource type="Texture2D" uid="uid://vvd6pgcfbb0" path="res://defense_dice.jpg" id="4_tw8re"]
+[ext_resource type="Texture2D" uid="uid://7sds4dlrr8gg" path="res://attack_+2.jpeg" id="5_d7m78"]
+[ext_resource type="Texture2D" uid="uid://dks58gn3axnqy" path="res://potion.jpg" id="6_7xc3b"]
+[ext_resource type="Texture2D" uid="uid://cu21n5w2f1q66" path="res://consumable.jpg" id="7_fjgpw"]
+[ext_resource type="Texture2D" uid="uid://cw76oc0agk8d3" path="res://bowl.png" id="8_dli7i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juq1q"]
+bg_color = Color(0.858824, 0.109804, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hy818"]
+bg_color = Color(0.305641, 0.60438, 1.92523e-07, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1eja"]
+bg_color = Color(0.635294, 0.635294, 0.635294, 0.27451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gg074"]
+bg_color = Color(0.6, 0.6, 0.6, 0.27451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4vld"]
+bg_color = Color(0.6, 0.6, 0.6, 0.27451)
+
+[node name="EncounterScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_oovti")
+
+[node name="Bowl" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(330, 152)
+layout_mode = 2
+offset_left = 184.0
+offset_top = 793.0
+offset_right = 544.0
+offset_bottom = 945.0
+texture = ExtResource("8_dli7i")
+expand_mode = 1
+
+[node name="EnemyContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -277.0
+offset_right = 250.0
+offset_bottom = 277.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="EnemyContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_juq1q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hy818")
+value = 50.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="EnemyContainer/ProgressBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -73.0
+offset_top = -22.5
+offset_right = 73.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 32
+text = "HP: 25/50"
+
+[node name="Enemy" type="TextureRect" parent="EnemyContainer"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+texture = ExtResource("2_c81be")
+expand_mode = 1
+
+[node name="PlayerPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 184.0
+offset_top = -180.0
+offset_right = -1376.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e1eja")
+
+[node name="PlayerContainer" type="VBoxContainer" parent="PlayerPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="DiceContainer" type="HBoxContainer" parent="PlayerPanel/PlayerContainer"]
+layout_mode = 2
+
+[node name="AttackDice" type="TextureRect" parent="PlayerPanel/PlayerContainer/DiceContainer"]
+custom_minimum_size = Vector2(156, 98)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("3_fwhqr")
+expand_mode = 1
+
+[node name="DefenseDice" type="TextureRect" parent="PlayerPanel/PlayerContainer/DiceContainer"]
+custom_minimum_size = Vector2(156, 98)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 0
+texture = ExtResource("4_tw8re")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="PlayerPanel/PlayerContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_juq1q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hy818")
+value = 50.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="PlayerPanel/PlayerContainer/ProgressBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -73.0
+offset_top = -22.5
+offset_right = 73.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 32
+text = "HP: 25/50"
+
+[node name="AbilityCardPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 544.0
+offset_top = -260.0
+offset_right = -538.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gg074")
+
+[node name="AbilityCardContainer" type="HBoxContainer" parent="AbilityCardPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AbilityCard" type="TextureRect" parent="AbilityCardPanel/AbilityCardContainer"]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("5_d7m78")
+expand_mode = 1
+
+[node name="AbilityCard2" type="TextureRect" parent="AbilityCardPanel/AbilityCardContainer"]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("5_d7m78")
+expand_mode = 1
+
+[node name="AbilityCard3" type="TextureRect" parent="AbilityCardPanel/AbilityCardContainer"]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("5_d7m78")
+expand_mode = 1
+
+[node name="AbilityCard4" type="TextureRect" parent="AbilityCardPanel/AbilityCardContainer"]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("5_d7m78")
+expand_mode = 1
+
+[node name="AbilityCard5" type="TextureRect" parent="AbilityCardPanel/AbilityCardContainer"]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("5_d7m78")
+expand_mode = 1
+
+[node name="PotionConsumablePanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1382.0
+offset_top = -180.0
+offset_right = -164.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_d4vld")
+
+[node name="Potion" type="TextureRect" parent="PotionConsumablePanel"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = 50.0
+grow_vertical = 2
+texture = ExtResource("6_7xc3b")
+expand_mode = 1
+
+[node name="ConsumableContainer" type="HBoxContainer" parent="PotionConsumablePanel"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Consumable" type="TextureRect" parent="PotionConsumablePanel/ConsumableContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("7_fjgpw")
+expand_mode = 1
+
+[node name="Consumable2" type="TextureRect" parent="PotionConsumablePanel/ConsumableContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("7_fjgpw")
+expand_mode = 1

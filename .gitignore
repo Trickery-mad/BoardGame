@@ -1,0 +1,23 @@
+# Ignore Godot's temporary files
+.import/
+*.godot
+*.tmp
+*.log
+*.cfg
+*.mono
+*.converted
+*.bin
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.pdb
+*.so
+*.dylib
+
+# Ignore export templates
+export_presets.cfg
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db

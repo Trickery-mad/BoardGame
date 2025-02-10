@@ -1,6 +1,5 @@
 # Ignore Godot's temporary files
 .import/
-*.godot
 *.tmp
 *.log
 *.cfg

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lce2Xw0vQJs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\berke\\Desktop\\BoardGame\\Boardgame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\berke\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
+    "C:\\Users\\berke\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
+    "C:\\Users\\berke\\.nuget\\packages\\godotsharpeditor\\4.3.0\\godotsharpeditor.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://55brk54wbvha"]
 
-[ext_resource type="Script" path="res://scenes/character_dice_selection.gd" id="1_xrym4"]
+[ext_resource type="Script" path="res://scripts/character_dice_selection.gd" id="1_xrym4"]
 [ext_resource type="Texture2D" uid="uid://maahrpkxq23" path="res://assets/dice/d4.png" id="2_ay7di"]
 [ext_resource type="Texture2D" uid="uid://dlr1vik3ofrna" path="res://assets/dice/d6.png" id="3_7cusl"]
 [ext_resource type="Texture2D" uid="uid://c0gnic7lpuj26" path="res://assets/dice/d8.png" id="4_7hypl"]
@@ -13,13 +13,7 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_xrym4")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="HealthLabel" type="Label" parent="Control"]
+[node name="HealthLabel" type="Label" parent="."]
 layout_mode = 1
 offset_left = 360.0
 offset_top = 38.0
@@ -32,7 +26,7 @@ text = "Remaining Roll: 3"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RollHealthButton" type="Button" parent="Control"]
+[node name="RollHealthButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 835.0
 offset_top = 92.0
@@ -41,7 +35,7 @@ offset_bottom = 142.0
 theme_override_font_sizes/font_size = 30
 text = "Roll Your Health"
 
-[node name="HealthResult" type="Label" parent="Control"]
+[node name="HealthResult" type="Label" parent="."]
 layout_mode = 2
 offset_left = 510.0
 offset_top = 163.0
@@ -53,133 +47,133 @@ theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="a_d4" type="Button" parent="Control"]
+[node name="a_d4" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 188.0
+offset_left = 107.0
 offset_top = 395.0
-offset_right = 316.0
+offset_right = 235.0
 offset_bottom = 526.0
 icon = ExtResource("2_ay7di")
 expand_icon = true
 
-[node name="a_d6" type="Button" parent="Control"]
+[node name="a_d6" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 398.0
+offset_left = 317.0
 offset_top = 395.0
-offset_right = 526.0
+offset_right = 445.0
 offset_bottom = 526.0
 icon = ExtResource("3_7cusl")
 expand_icon = true
 
-[node name="a_d8" type="Button" parent="Control"]
+[node name="a_d8" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 619.0
+offset_left = 538.0
 offset_top = 397.0
-offset_right = 747.0
+offset_right = 666.0
 offset_bottom = 528.0
 icon = ExtResource("4_7hypl")
 icon_alignment = 1
 expand_icon = true
 
-[node name="a_d10" type="Button" parent="Control"]
+[node name="a_d10" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 191.0
+offset_left = 110.0
 offset_top = 582.0
-offset_right = 319.0
+offset_right = 238.0
 offset_bottom = 713.0
 icon = ExtResource("5_af2tr")
 icon_alignment = 1
 expand_icon = true
 
-[node name="a_d12" type="Button" parent="Control"]
+[node name="a_d12" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 405.0
+offset_left = 324.0
 offset_top = 581.0
-offset_right = 533.0
+offset_right = 452.0
 offset_bottom = 712.0
 icon = ExtResource("6_povyk")
 icon_alignment = 1
 expand_icon = true
 
-[node name="a_d20" type="Button" parent="Control"]
+[node name="a_d20" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 624.0
+offset_left = 543.0
 offset_top = 583.0
-offset_right = 752.0
+offset_right = 671.0
 offset_bottom = 714.0
 icon = ExtResource("7_bq2ot")
 icon_alignment = 1
 expand_icon = true
 
-[node name="d_d4" type="Button" parent="Control"]
+[node name="d_d4" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 1190.0
-offset_top = 397.0
-offset_right = 1318.0
-offset_bottom = 528.0
+offset_left = 1280.0
+offset_top = 390.0
+offset_right = 1408.0
+offset_bottom = 521.0
 icon = ExtResource("2_ay7di")
 expand_icon = true
 
-[node name="d_d6" type="Button" parent="Control"]
+[node name="d_d6" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 1400.0
-offset_top = 397.0
-offset_right = 1528.0
-offset_bottom = 528.0
+offset_left = 1490.0
+offset_top = 390.0
+offset_right = 1618.0
+offset_bottom = 521.0
 icon = ExtResource("3_7cusl")
 expand_icon = true
 
-[node name="d_d8" type="Button" parent="Control"]
+[node name="d_d8" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 1621.0
-offset_top = 399.0
-offset_right = 1749.0
-offset_bottom = 530.0
+offset_left = 1711.0
+offset_top = 392.0
+offset_right = 1839.0
+offset_bottom = 523.0
 icon = ExtResource("4_7hypl")
 icon_alignment = 1
 expand_icon = true
 
-[node name="d_d10" type="Button" parent="Control"]
+[node name="d_d10" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 1193.0
-offset_top = 584.0
-offset_right = 1321.0
-offset_bottom = 715.0
+offset_left = 1283.0
+offset_top = 577.0
+offset_right = 1411.0
+offset_bottom = 708.0
 icon = ExtResource("5_af2tr")
 expand_icon = true
 
-[node name="d_d12" type="Button" parent="Control"]
+[node name="d_d12" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 1401.0
-offset_top = 583.0
-offset_right = 1529.0
-offset_bottom = 714.0
+offset_left = 1491.0
+offset_top = 576.0
+offset_right = 1619.0
+offset_bottom = 707.0
 icon = ExtResource("6_povyk")
 expand_icon = true
 
-[node name="d_d20" type="Button" parent="Control"]
+[node name="d_d20" type="Button" parent="."]
 clip_contents = true
 layout_mode = 1
-offset_left = 1628.0
-offset_top = 585.0
-offset_right = 1756.0
-offset_bottom = 716.0
+offset_left = 1718.0
+offset_top = 578.0
+offset_right = 1846.0
+offset_bottom = 709.0
 icon = ExtResource("7_bq2ot")
 icon_alignment = 1
 expand_icon = true
 
-[node name="ConfirmButton" type="Button" parent="Control"]
+[node name="ConfirmButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 810.0
 offset_top = 901.0
@@ -187,7 +181,7 @@ offset_right = 1110.0
 offset_bottom = 972.0
 text = "Confirm"
 
-[node name="WarningLabel" type="Label" parent="Control/ConfirmButton"]
+[node name="WarningLabel" type="Label" parent="ConfirmButton"]
 layout_mode = 0
 offset_top = -29.0
 offset_right = 300.0
@@ -196,25 +190,34 @@ theme_override_font_sizes/font_size = 14
 text = "Please roll your health and select your dice."
 horizontal_alignment = 1
 
-[node name="Attack Dice Label" type="Label" parent="Control"]
+[node name="Attack Dice Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 230.0
+offset_left = 149.0
 offset_top = 322.0
-offset_right = 681.0
+offset_right = 600.0
 offset_bottom = 364.0
 theme_override_font_sizes/font_size = 30
 text = "Attack Dice: Choose one below."
 
-[node name="Defense Dice Label" type="Label" parent="Control"]
+[node name="Defense Dice Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1226.0
-offset_top = 320.0
-offset_right = 1703.0
-offset_bottom = 362.0
+offset_left = 1316.0
+offset_top = 313.0
+offset_right = 1793.0
+offset_bottom = 355.0
 theme_override_font_sizes/font_size = 30
 text = "Defense Dice: Choose one below."
 
-[connection signal="pressed" from="Control/RollHealthButton" to="." method="_on_roll_health_button_pressed"]
-[connection signal="mouse_entered" from="Control/ConfirmButton" to="." method="_on_confirm_button_mouse_entered"]
-[connection signal="mouse_exited" from="Control/ConfirmButton" to="." method="_on_confirm_button_mouse_exited"]
-[connection signal="pressed" from="Control/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[node name="CharacterTexture" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 868.0
+offset_top = 352.0
+offset_right = 1046.0
+offset_bottom = 740.0
+expand_mode = 1
+stretch_mode = 6
+
+[connection signal="pressed" from="RollHealthButton" to="." method="_on_roll_health_button_pressed"]
+[connection signal="mouse_entered" from="ConfirmButton" to="." method="_on_confirm_button_mouse_entered"]
+[connection signal="mouse_exited" from="ConfirmButton" to="." method="_on_confirm_button_mouse_exited"]
+[connection signal="pressed" from="ConfirmButton" to="." method="_on_confirm_button_pressed"]

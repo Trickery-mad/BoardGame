@@ -1,13 +1,13 @@
 [gd_scene load_steps=14 format=3 uid="uid://bgas8mjtmbkyh"]
 
-[ext_resource type="Texture2D" uid="uid://b0cjyfurbyp6" path="res://844946240_preview_3288949bd5d35b3bcfa9de0b65faade54bbd701c.jpg" id="1_oovti"]
-[ext_resource type="Texture2D" uid="uid://btnpekwlxi3oi" path="res://vecteezy_an-8-bit-retro-styled-pixel-art-illustration-of-a-goblin_19017599.png" id="2_c81be"]
-[ext_resource type="Texture2D" uid="uid://ci32uob7ux8ml" path="res://attack_dice.jpg" id="3_fwhqr"]
-[ext_resource type="Texture2D" uid="uid://vvd6pgcfbb0" path="res://defense_dice.jpg" id="4_tw8re"]
-[ext_resource type="Texture2D" uid="uid://7sds4dlrr8gg" path="res://attack_+2.jpeg" id="5_d7m78"]
-[ext_resource type="Texture2D" uid="uid://dks58gn3axnqy" path="res://potion.jpg" id="6_7xc3b"]
-[ext_resource type="Texture2D" uid="uid://cu21n5w2f1q66" path="res://consumable.jpg" id="7_fjgpw"]
-[ext_resource type="Texture2D" uid="uid://cw76oc0agk8d3" path="res://bowl.png" id="8_dli7i"]
+[ext_resource type="Texture2D" uid="uid://b0cjyfurbyp6" path="res://assets/844946240_preview_3288949bd5d35b3bcfa9de0b65faade54bbd701c.jpg" id="1_oovti"]
+[ext_resource type="Texture2D" uid="uid://btnpekwlxi3oi" path="res://assets/vecteezy_an-8-bit-retro-styled-pixel-art-illustration-of-a-goblin_19017599.png" id="2_c81be"]
+[ext_resource type="Texture2D" uid="uid://ci32uob7ux8ml" path="res://assets/attack_dice.jpg" id="3_fwhqr"]
+[ext_resource type="Texture2D" uid="uid://vvd6pgcfbb0" path="res://assets/defense_dice.jpg" id="4_tw8re"]
+[ext_resource type="Texture2D" uid="uid://7sds4dlrr8gg" path="res://assets/attack_+2.jpeg" id="5_d7m78"]
+[ext_resource type="Texture2D" uid="uid://dks58gn3axnqy" path="res://assets/potion.jpg" id="6_7xc3b"]
+[ext_resource type="Texture2D" uid="uid://cu21n5w2f1q66" path="res://assets/consumable.jpg" id="7_fjgpw"]
+[ext_resource type="Texture2D" uid="uid://cw76oc0agk8d3" path="res://assets/bowl.png" id="8_dli7i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juq1q"]
 bg_color = Color(0.858824, 0.109804, 0, 1)

@@ -1,5 +1,8 @@
 res://scenes/main.tscn
-res://scenes/character_dice_selection.tscn
-res://scenes/character_dice_selection.gd
 res://scenes/character_selection.tscn
+res://scenes/character_dice_selection.tscn
+res://scripts/character_dice_selection.gd
+res://scenes/encounter_scene.tscn
+res://scripts/player.gd
 res://scripts/global.gd
+res://scripts/character_selection.gd

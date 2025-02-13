@@ -1,6 +1,6 @@
 extends Node
 
-var selected_character_count = 1  # Default to 1
+var selected_character_count = 1 
 
 func get_number_accordingto_dice(dice_name: String) -> int:
 	match dice_name:
@@ -17,6 +17,6 @@ func get_number_accordingto_dice(dice_name: String) -> int:
 		"a_d20", "d_d20":
 			return 20
 		_:
-			return -1  # Default case if no match found
+			return -1
 
 	

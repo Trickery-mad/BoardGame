@@ -1,11 +1,11 @@
+TextureRect
+Control
+Label
 Button
 VBoxContainer
-TextureRect
 HBoxContainer
 Panel
-Label
 ProgressBar
 Node2D
-Control
 TextureButton
 SpinBox
